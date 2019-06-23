@@ -1,6 +1,6 @@
 AuthType Basic   
 AuthName admin
-AuthUserFile http://internshiptest.gearhostpreview.com/templates/admin/.htpasswd
+AuthUserFile http://internship.zzz.com.ua/templates/admin/.htpasswd
 require valid-user
 
 
