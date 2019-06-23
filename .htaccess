@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/Internship/wepapp/*
+RewriteRule ^Internship/([^/]*)/*([^/]*)/*(.*) Internship/index.html?c=$1&d=$2&p=$3 [QSA]
+
+

@@ -1,0 +1,6 @@
+AuthType Basic   
+AuthName admin 
+require valid-user
+
+
+

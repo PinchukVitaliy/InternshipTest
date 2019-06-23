@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Info book</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="/Internship/misc/css/addBookStyle.css">
+<link rel="stylesheet" href="/Internship/misc/css/mainStyle.css">	
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Информация о книге</h1>
+		<div class="input-group mb-3  ">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Картинка</span> <img
+					src="/Internship/misc/images/no_image.png"
+					style="width: 248px; height: 350px" alt="icon">				
+			</div>
+		</div>
+
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Название</span>
+			</div>
+			<input type="text" class="form-control" value="bookInf.name"
+				readonly>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Описание книги</span>
+			</div>
+			<textarea class="form-control" id="info" name="info" readonly>
+			bookInf.info
+			</textarea>
+		</div>
+		
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Цена</span>
+			</div>
+			<input type="text" class="form-control" value="bookInf.price"
+				readonly>
+		</div>
+		<div class="input-group mb-3">
+			<input class="hide" id="hd-1" type="checkbox"> <label
+				for="hd-1"><b>Авторы</b></label>
+			<div>
+				<div >
+					<input type="text" class="form-control" value="author.name 1"
+						readonly>
+				</div>
+				<div >
+					<input type="text" class="form-control" value="author.name 2"
+						readonly>
+				</div>
+			</div>
+		</div>
+		<div class="input-group mb-3">
+			<input class="hide" id="hd-2" type="checkbox"> <label
+				for="hd-2"><b>Жанры</b></label>
+			<div>
+				<div>
+					<input type="text" path="genres" class="form-control"
+						value="genre.name 1" readonly>
+				</div>
+				<div>
+					<input type="text" path="genres" class="form-control"
+						value="genre.name 5" readonly>
+				</div>
+				<div>
+					<input type="text" path="genres" class="form-control"
+						value="genre.name 12" readonly>
+				</div>
+			</div>
+		</div>
+
+		<br> <a href="/order"><input type="button" class="btn btn-success"
+			value="Сделать заказ" /></a> <br> <br>
+	</div>
+
+</body>
+</html>
